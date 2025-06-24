@@ -30,7 +30,7 @@ interface SidebarProps {
 //resuable sidebar with items and selected item as props
 function Sidebar({ items, footerItem, selectedItemId }: SidebarProps) {
   return (
-    <div className="pt-8 px-7 flex flex-col gap-10 items-center h-full">
+    <div className="hidden md:flex *:pt-8 px-7 flex-col gap-10 items-center h-full">
       <div className="group hover:bg-[#525252] p-2 rounded-lg">
         <IconMenu2 />
       </div>
