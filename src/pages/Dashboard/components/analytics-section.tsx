@@ -1,4 +1,5 @@
 import { IconHelp, IconPlus } from "@tabler/icons-react";
+import Graph from "./graph";
 
 const PerformanceMetricCard = ({
   label,
@@ -23,8 +24,11 @@ const PerformanceMetricCard = ({
 
 function Analytics() {
   return (
-    <div className="mt-[50px]">
-      <div></div>
+    <div className="mt-[50px] flex gap-5">
+      <div className="space-y-4 flex-1 h-full">
+        <h1 className="font-roobert text-2xl font-[600]">Graphs</h1>
+        <Graph />
+      </div>
       <div className="space-y-2.5">
         <div className="flex w-full justify-between">
           <h1 className="font-[600] text-2xl">Key Performance Indicators</h1>

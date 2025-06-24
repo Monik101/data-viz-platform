@@ -59,7 +59,7 @@ function VariablesSection() {
         ))}
       </div>
       {matched && (
-        <div className="w-full bg-[#222324] p-10">
+        <div className="w-full bg-[#222324] p-10 border-t border-[#525252]">
           <div className="flex items-center gap-5">
             <p className="font-bold text-xl">{matched.name}</p>
             <IconHelp size={18} className="text-[#888888]" />
