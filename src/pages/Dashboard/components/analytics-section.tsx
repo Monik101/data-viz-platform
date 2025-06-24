@@ -25,7 +25,7 @@ const PerformanceMetricCard = ({
 function Analytics() {
   return (
     <div className="mt-[50px] flex flex-col lg:flex-row gap-5">
-      <div className="space-y-4 flex-1 shrink-0 h-full min-w-[450px] w-full">
+      <div className="space-y-4 flex-1 shrink-0 h-full md:min-w-[450px] w-full">
         <h1 className="font-roobert text-2xl font-[600]">Graphs</h1>
         <Graph />
       </div>
@@ -36,7 +36,7 @@ function Analytics() {
             Variables <IconPlus />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <PerformanceMetricCard
             label="Infrastructure Units"
             description="This describes variable two and what the shown data means."

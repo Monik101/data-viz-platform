@@ -6,7 +6,7 @@ const Highlights = ({ description }: { description: string }) => {
   return (
     <div className="flex justify-between w-full py-[15px] px-6 border-[0.5px] border-[#C8E972] rounded-md font-medium bg-[#CCFF0005]">
       {description}
-      <IconDots />
+      <IconDots className="shrink-0" />
     </div>
   );
 };
@@ -18,7 +18,9 @@ function BestScenerio() {
       <div className="flex w-full justify-between items-center">
         <div className="flex gap-2.5 items-center">
           <IconSparkles size={18} />
-          <h1 className="text-2xl font-[600]">Best Scenario Results</h1>
+          <h1 className="text-lg md:text-2xl font-[600]">
+            Best Scenario Results
+          </h1>
         </div>
         <div
           className="border border-[#C8E972] rounded-4xl px-2.5 py-[5px] transition-transform duration-300 cursor-pointer"

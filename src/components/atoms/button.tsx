@@ -14,7 +14,7 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const base =
-    "rounded font-medium transition-colors outline-none cursor-pointer";
+    "rounded font-medium transition-colors outline-none cursor-pointer text-xs sm:text-base";
   const styles = {
     primary: "border-[0.67px] border-[#5A5A5A] bg-[#242424]",
     icon: "",
