@@ -7,9 +7,9 @@ import {
   IconClipboardData,
   IconSettingsFilled,
   IconUserCircle,
-  IconSearch,
 } from "@tabler/icons-react";
-import Tabs from "./components/tabs";
+import TopNav from "./components/top-nav";
+import MainContainer from "./components/main-container";
 
 const Dashboard = () => {
   const [selectedItem, setSelectedItem] = useState<
@@ -63,18 +63,8 @@ const Dashboard = () => {
         }}
       />
       <div className="flex flex-col flex-1">
-        <div className="py-6 px-6 flex justify-between w-full">
-          <Tabs />
-          <div className="flex bg-[#2C2E334D] border border-[#5A5A5A] rounded-[5px] py-2 px-3 gap-2 items-center">
-            <IconSearch size={20} />
-            <input
-              type="text"
-              placeholder="Search"
-              className="outline-none text-white"
-            />
-          </div>
-        </div>
-        <div className="flex-1 border-l border-t rounded-sm border-[#525252]"></div>
+        <TopNav />
+        <MainContainer />
       </div>
     </div>
   );
