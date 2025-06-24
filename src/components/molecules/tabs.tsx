@@ -1,4 +1,4 @@
-import Button from "../atoms/buttons";
+import Button from "../atoms/button";
 
 export interface TabsProps<T extends string> {
   items: {

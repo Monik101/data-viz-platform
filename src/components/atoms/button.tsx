@@ -13,7 +13,8 @@ const Button = ({
   size = "md",
   ...props
 }: ButtonProps) => {
-  const base = "rounded font-medium transition-colors outline-none";
+  const base =
+    "rounded font-medium transition-colors outline-none cursor-pointer";
   const styles = {
     primary: "border-[0.67px] border-[#5A5A5A] bg-[#242424]",
     icon: "",
