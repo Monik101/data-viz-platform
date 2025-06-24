@@ -6,7 +6,7 @@ const AccessDenied = lazy(() => import("../atoms/access-denied"));
 
 const FetchingState = () => {
   return (
-    <div className="">
+    <div className="h-full w-full flex justify-center items-center">
       <div className="text-lg font-medium animate-pulse">
         Fetching your details...
       </div>
@@ -24,9 +24,11 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
   return user ? (
     children
   ) : (
-    <Suspense fallback={<FetchingState />}>
-      <AccessDenied />
-    </Suspense>
+    <div className="h-full w-full flex justify-center items-center">
+      <Suspense fallback={<FetchingState />}>
+        <AccessDenied />
+      </Suspense>
+    </div>
   );
 }
 
